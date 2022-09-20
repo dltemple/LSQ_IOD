@@ -17,12 +17,12 @@ print(os.getcwd())
 
 CC = CoordinateChanges(Const)
 
-with open('../data/DE430Coeff.pkl', 'rb') as f:
+with open('data/DE430Coeff.pkl', 'rb') as f:
 	PC = pickle.load(f)
 
 Cnm, Snm = CC.read_harmonics()
 
-eopdata = np.loadtxt('../data/eop19622021.txt')
+eopdata = np.loadtxt('data/eop19622021.txt')
 eopdata = eopdata.T
 
 AuxParam.Cnm = Cnm

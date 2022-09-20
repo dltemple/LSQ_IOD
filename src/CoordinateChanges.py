@@ -16,7 +16,7 @@ class CoordinateChanges(object):
 		self.constants = constants
 
 	@staticmethod
-	def read_harmonics(fname: str = '../data/ITG-Grace03s.txt', n_terms: int = 71):
+	def read_harmonics(fname: str = 'data/ITG-Grace03s.txt', n_terms: int = 71):
 		cnm = np.zeros([n_terms, n_terms])
 		snm = np.zeros([n_terms, n_terms])
 

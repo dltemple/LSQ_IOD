@@ -16,12 +16,12 @@ from aux_params import AuxParam
 print(os.getcwd())
 CC = CoordinateChanges(Const)
 
-with open('../data/DE430Coeff.pkl', 'rb') as f:
+with open('data/DE430Coeff.pkl', 'rb') as f:
 	PC = pickle.load(f)
 
 Cnm, Snm = CC.read_harmonics()
 
-eopdata = np.loadtxt('../data/eop19622021.txt')
+eopdata = np.loadtxt('data/eop19622021.txt')
 eopdata = eopdata.T
 
 obs = np.array([2458902.545408345, 58.87856261726468, 14.731759244081474,
